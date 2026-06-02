@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nuestro Aniversario</title>
-    <meta name="description" content="Invitacion digital para celebrar nuestro aniversario.">
+    <title>Greg & Cris</title>
+    <meta name="description" content="Invitacion digital de Greg y Cris.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,31 +12,41 @@
   </head>
   <body>
     <div class="opening" id="opening">
-      <video class="opening__video" src="video/recuerdo-aniversario.mp4" autoplay muted loop playsinline></video>
       <div class="opening__panel">
         <p class="eyebrow">Invitacion especial</p>
-        <h1>Nuestro Aniversario</h1>
-        <p>Una noche para recordar lo que somos, lo que hemos vivido y todo lo que viene.</p>
+        <h1>Greg & Cris</h1>
+        <p>Una historia unida por un hilo rojo invisible.</p>
         <button class="primary-button" id="openInvite" type="button">Abrir invitacion</button>
       </div>
     </div>
 
     <header class="hero" id="inicio">
-      <video class="hero__video" src="video/recuerdo-aniversario.mp4" autoplay muted loop playsinline></video>
-      <div class="hero__shade"></div>
+      <div class="red-thread" aria-hidden="true"></div>
       <nav class="topbar" aria-label="Navegacion principal">
         <a href="#inicio">Inicio</a>
         <a href="#detalles">Detalles</a>
-        <a href="#galeria">Recuerdos</a>
+        <a href="#galeria">Video</a>
         <a href="#confirmar">Confirmar</a>
       </nav>
-      <section class="hero__content">
-        <p class="eyebrow" id="heroLabel">Celebramos nuestro amor</p>
-        <h1 id="heroNames">Josue & Amor</h1>
-        <p class="hero__copy" id="heroCopy">Cada momento juntos merece quedarse en la memoria. Acompananos a celebrar nuestro aniversario.</p>
-        <div class="hero__actions">
-          <a class="primary-button" href="#confirmar">Confirmar asistencia</a>
-          <button class="icon-button" id="musicToggle" type="button" aria-label="Activar musica">♪</button>
+      <section class="hero__content hero__grid">
+        <div>
+          <p class="eyebrow" id="heroLabel">Nuestro hilo rojo</p>
+          <h1 id="heroNames">Greg & Cris</h1>
+          <div class="legend" id="heroCopy">
+            <p>En una leyenda japonesa.</p>
+            <p>Dice que dos personas destinadas a encontrarse estan unidas por un hilo rojo invisible.</p>
+            <p>Puede estirarse, enredarse o perderse entre los caminos de la vida...</p>
+            <p>pero nunca se rompe.</p>
+            <p>Me alegra que mi hilo rojo me haya llevado hasta</p>
+            <p><strong>TI ❤️</strong></p>
+          </div>
+          <div class="hero__actions">
+            <a class="primary-button" href="#confirmar">Confirmar asistencia</a>
+            <button class="icon-button" id="musicToggle" type="button" aria-label="Activar musica">♪</button>
+          </div>
+        </div>
+        <div class="hero__media">
+          <video src="video/hilo-rojo.mp4" autoplay muted loop playsinline></video>
         </div>
       </section>
     </header>
@@ -46,9 +56,9 @@
         <div class="section__inner intro__grid">
           <div>
             <p class="eyebrow">Con carino</p>
-            <h2>Queremos compartir esta fecha contigo</h2>
+            <h2>El destino tambien se celebra</h2>
           </div>
-          <p>Preparamos una celebracion intima, elegante y llena de recuerdos. Tu presencia hara que esta noche sea todavia mas especial.</p>
+          <p>Preparamos una celebracion intima y elegante para honrar esta historia. Tu presencia hara que esta fecha sea todavia mas especial.</p>
         </div>
       </section>
 
@@ -84,12 +94,12 @@
       <section class="section gallery" id="galeria">
         <div class="section__inner gallery__layout">
           <div class="section__heading">
-            <p class="eyebrow">Recuerdos</p>
-            <h2>Una historia en movimiento</h2>
-            <p>El video queda integrado como parte principal de la invitacion. Puedes agregar fotos en la carpeta <strong>img</strong> y cambiar las tarjetas desde el HTML.</p>
+            <p class="eyebrow">Video</p>
+            <h2>El hilo rojo en movimiento</h2>
+            <p>Un detalle visual para acompanar la invitacion y guardar este momento como parte de la historia.</p>
           </div>
           <div class="memory-frame">
-            <video src="video/recuerdo-aniversario.mp4" controls playsinline></video>
+            <video src="video/hilo-rojo.mp4" controls playsinline></video>
           </div>
         </div>
       </section>

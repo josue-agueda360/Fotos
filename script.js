@@ -1,7 +1,14 @@
 const INVITATION = {
-  names: "Josue & Amor",
-  label: "Celebramos nuestro amor",
-  intro: "Cada momento juntos merece quedarse en la memoria. Acompananos a celebrar nuestro aniversario.",
+  names: "Greg & Cris",
+  label: "Nuestro hilo rojo",
+  intro: [
+    "En una leyenda japonesa.",
+    "Dice que dos personas destinadas a encontrarse estan unidas por un hilo rojo invisible.",
+    "Puede estirarse, enredarse o perderse entre los caminos de la vida...",
+    "pero nunca se rompe.",
+    "Me alegra que mi hilo rojo me haya llevado hasta",
+    "TI ❤️"
+  ],
   dateISO: "2026-12-12T18:00:00-06:00",
   dateText: "12 de diciembre de 2026",
   timeText: "6:00 PM",
@@ -16,7 +23,9 @@ const $ = (selector) => document.querySelector(selector);
 function applyInvitationData() {
   $("#heroNames").textContent = INVITATION.names;
   $("#heroLabel").textContent = INVITATION.label;
-  $("#heroCopy").textContent = INVITATION.intro;
+  $("#heroCopy").innerHTML = INVITATION.intro
+    .map((line, index) => index === INVITATION.intro.length - 1 ? `<p><strong>${line}</strong></p>` : `<p>${line}</p>`)
+    .join("");
   $("#dateText").textContent = INVITATION.dateText;
   $("#timeText").textContent = INVITATION.timeText;
   $("#placeText").textContent = INVITATION.place;

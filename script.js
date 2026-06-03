@@ -9,8 +9,8 @@ const INVITATION = {
     "Me alegra que mi hilo rojo me haya llevado hasta",
     "TI ❤️"
   ],
-  dateISO: "2026-12-12T18:00:00-06:00",
-  dateText: "12 de diciembre de 2026",
+  dateISO: "2026-07-19T18:00:00-06:00",
+  dateText: "19 de julio de 2026",
   timeText: "6:00 PM",
   place: "Lugar por confirmar",
   mapUrl: "https://maps.google.com",

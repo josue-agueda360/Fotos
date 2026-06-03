@@ -330,7 +330,8 @@ a {
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
 }
 
-.memory-frame img {
+.memory-frame img,
+.memory-frame video {
   display: block;
   width: 100%;
   max-height: 680px;

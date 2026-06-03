@@ -8,6 +8,7 @@ Proyecto web listo para subir a Netlify o conectar con GitHub Pages.
 - `style.css`: diseno visual.
 - `script.js`: datos editables, contador, musica y enlaces.
 - `img/greg-cris.jpeg`: foto principal.
+- `video/tu-me-encantas.mp4`: video inferior con musica.
 - `img/`: carpeta para agregar fotos si deseas ampliar la galeria.
 
 ## Cambiar datos

@@ -55,7 +55,20 @@ function wireOpening() {
   openButton.addEventListener("click", startExperience);
 }
 
+function wireLetter() {
+  const letterSection = $("#carta");
+  const letterToggle = $("#letterToggle");
+  const label = letterToggle.querySelector(".envelope-button__text");
+
+  letterToggle.addEventListener("click", () => {
+    const isOpen = letterSection.classList.toggle("is-open");
+    letterToggle.setAttribute("aria-expanded", String(isOpen));
+    label.textContent = isOpen ? "Cerrar carta" : "Abrir carta";
+  });
+}
+
 applyInvitationData();
 updateCountdown();
 wireOpening();
+wireLetter();
 setInterval(updateCountdown, 1000);

@@ -478,7 +478,7 @@ a {
 }
 
 .letter-section.is-open .letter-paper {
-  max-height: 1400px;
+  max-height: 2600px;
   padding: 38px 34px;
   border-color: rgba(32, 27, 24, 0.12);
   opacity: 1;
@@ -553,6 +553,12 @@ a {
   }
 
   .letter-section.is-open .letter-paper {
+    max-height: 3600px;
     padding: 30px 22px;
+  }
+
+  .letter-paper p {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 }

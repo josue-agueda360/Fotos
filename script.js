@@ -12,10 +12,7 @@ const INVITATION = {
   dateISO: "2026-07-19T18:00:00-06:00",
   dateText: "19 de julio de 2026",
   timeText: "6:00 PM",
-  place: "Lugar por confirmar",
-  mapUrl: "https://maps.google.com",
-  whatsappNumber: "",
-  whatsappMessage: "Confirmo mi asistencia al aniversario. Muchas gracias por la invitacion."
+  place: "Lugar por confirmar"
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -29,13 +26,6 @@ function applyInvitationData() {
   $("#dateText").textContent = INVITATION.dateText;
   $("#timeText").textContent = INVITATION.timeText;
   $("#placeText").textContent = INVITATION.place;
-  $("#mapLink").href = INVITATION.mapUrl;
-
-  const encodedMessage = encodeURIComponent(INVITATION.whatsappMessage);
-  const phone = INVITATION.whatsappNumber.replace(/\D/g, "");
-  $("#whatsappLink").href = phone
-    ? `https://wa.me/${phone}?text=${encodedMessage}`
-    : `https://wa.me/?text=${encodedMessage}`;
 }
 
 function updateCountdown() {
@@ -57,34 +47,12 @@ function updateCountdown() {
 function wireOpening() {
   const opening = $("#opening");
   const openButton = $("#openInvite");
-  const music = $("#bgMusic");
-  const musicToggle = $("#musicToggle");
 
-  async function startExperience() {
+  function startExperience() {
     opening.classList.add("is-hidden");
-    try {
-      music.volume = 0.34;
-      await music.play();
-      musicToggle.classList.add("is-playing");
-      musicToggle.setAttribute("aria-label", "Pausar musica");
-    } catch {
-      musicToggle.setAttribute("aria-label", "Activar musica");
-    }
   }
 
   openButton.addEventListener("click", startExperience);
-  musicToggle.addEventListener("click", async () => {
-    if (music.paused) {
-      await music.play();
-      musicToggle.classList.add("is-playing");
-      musicToggle.setAttribute("aria-label", "Pausar musica");
-      return;
-    }
-
-    music.pause();
-    musicToggle.classList.remove("is-playing");
-    musicToggle.setAttribute("aria-label", "Activar musica");
-  });
 }
 
 applyInvitationData();

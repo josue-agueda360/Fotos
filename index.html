@@ -22,12 +22,6 @@
 
     <header class="hero" id="inicio">
       <div class="red-thread" aria-hidden="true"></div>
-      <nav class="topbar" aria-label="Navegacion principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#detalles">Detalles</a>
-        <a href="#galeria">Video</a>
-        <a href="#confirmar">Confirmar</a>
-      </nav>
       <section class="hero__content hero__grid">
         <div>
           <p class="eyebrow" id="heroLabel">Nuestro hilo rojo</p>
@@ -40,10 +34,6 @@
             <p>Me alegra que mi hilo rojo me haya llevado hasta</p>
             <p><strong>TI ❤️</strong></p>
           </div>
-          <div class="hero__actions">
-            <a class="primary-button" href="#confirmar">Confirmar asistencia</a>
-            <button class="icon-button" id="musicToggle" type="button" aria-label="Activar musica">♪</button>
-          </div>
         </div>
         <div class="hero__media">
           <video src="video/hilo-rojo.mp4" autoplay muted loop playsinline></video>
@@ -52,16 +42,6 @@
     </header>
 
     <main>
-      <section class="section intro">
-        <div class="section__inner intro__grid">
-          <div>
-            <p class="eyebrow">Con carino</p>
-            <h2>El destino tambien se celebra</h2>
-          </div>
-          <p>Preparamos una celebracion intima y elegante para honrar esta historia. Tu presencia hara que esta fecha sea todavia mas especial.</p>
-        </div>
-      </section>
-
       <section class="section details" id="detalles">
         <div class="section__inner">
           <div class="section__heading">
@@ -103,29 +83,8 @@
           </div>
         </div>
       </section>
-
-      <section class="section location">
-        <div class="section__inner location__grid">
-          <div>
-            <p class="eyebrow">Ubicacion</p>
-            <h2 id="locationTitle">Nos vemos en el lugar de la celebracion</h2>
-            <p id="locationCopy">Cuando tengas la direccion exacta, cambiala en script.js y el boton abrira Google Maps.</p>
-          </div>
-          <a class="secondary-button" id="mapLink" href="https://maps.google.com" target="_blank" rel="noreferrer">Ver mapa</a>
-        </div>
-      </section>
-
-      <section class="section rsvp" id="confirmar">
-        <div class="section__inner rsvp__box">
-          <p class="eyebrow">Confirmacion</p>
-          <h2>Reserva la fecha con nosotros</h2>
-          <p>Confirmanos tu asistencia por WhatsApp para preparar todo con detalle.</p>
-          <a class="primary-button" id="whatsappLink" href="https://wa.me/?text=Confirmo%20mi%20asistencia%20al%20aniversario" target="_blank" rel="noreferrer">Confirmar por WhatsApp</a>
-        </div>
-      </section>
     </main>
 
-    <audio id="bgMusic" src="music/romantica-suave.wav" loop preload="auto"></audio>
     <script src="script.js"></script>
   </body>
 </html>

@@ -8,7 +8,6 @@ Proyecto web listo para subir a Netlify o conectar con GitHub Pages.
 - `style.css`: diseno visual.
 - `script.js`: datos editables, contador, musica y enlaces.
 - `video/hilo-rojo.mp4`: video principal.
-- `music/romantica-suave.wav`: musica de fondo.
 - `img/`: carpeta para agregar fotos si deseas ampliar la galeria.
 
 ## Cambiar datos
@@ -20,7 +19,6 @@ Abre `script.js` y edita el bloque `INVITATION`:
 - `dateText` y `timeText`: texto visible.
 - `place`: lugar visible.
 - `mapUrl`: enlace de Google Maps.
-- `whatsappNumber`: numero con codigo de pais, sin signos. Ejemplo: `50212345678`.
 
 ## Subir a Netlify
 

@@ -7,7 +7,7 @@ Proyecto web listo para subir a Netlify o conectar con GitHub Pages.
 - `index.html`: estructura de la invitacion.
 - `style.css`: diseno visual.
 - `script.js`: datos editables, contador, musica y enlaces.
-- `video/hilo-rojo.mp4`: video principal.
+- `img/greg-cris.jpeg`: foto principal.
 - `img/`: carpeta para agregar fotos si deseas ampliar la galeria.
 
 ## Cambiar datos

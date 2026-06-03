@@ -190,7 +190,7 @@ a {
   box-shadow: 0 32px 80px rgba(32, 27, 24, 0.24);
 }
 
-.hero__media video {
+.hero__media img {
   display: block;
   width: 100%;
   aspect-ratio: 9 / 16;
@@ -330,7 +330,7 @@ a {
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
 }
 
-.memory-frame video {
+.memory-frame img {
   display: block;
   width: 100%;
   max-height: 680px;
